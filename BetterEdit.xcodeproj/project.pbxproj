@@ -7,13 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBC5782824FD44B3006E3896 /* MultiLineFuncCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5782724FD44B3006E3896 /* MultiLineFuncCommand.swift */; };
+		BBCB643424F0BE18005A84A7 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB643324F0BE18005A84A7 /* Errors.swift */; };
+		BBE898A524EEDB4600303A13 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF7DD2D24EE0E8A007F8811 /* Cocoa.framework */; };
+		BBE898A924EEDB4600303A13 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE898A824EEDB4600303A13 /* SourceEditorExtension.swift */; };
+		BBE898AB24EEDB4600303A13 /* SelectLineCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE898AA24EEDB4600303A13 /* SelectLineCommand.swift */; };
+		BBE898B024EEDB4600303A13 /* LineExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BBE898A424EEDB4600303A13 /* LineExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBE898B424EEDB4C00303A13 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF7DD2F24EE0E8A007F8811 /* XcodeKit.framework */; };
+		BBE898B524EEDB4C00303A13 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBF7DD2F24EE0E8A007F8811 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BBE898B824EEDD8500303A13 /* DuplicateLineCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE898B724EEDD8500303A13 /* DuplicateLineCommand.swift */; };
+		BBE898BB24EEDECA00303A13 /* JoinLinesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE898BA24EEDECA00303A13 /* JoinLinesCommand.swift */; };
+		BBE898BD24EEDF6C00303A13 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE898BC24EEDF6C00303A13 /* Extensions.swift */; };
+		BBE898BF24EEE07000303A13 /* SplitLineCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE898BE24EEE07000303A13 /* SplitLineCommand.swift */; };
+		BBE898C124EEE1A700303A13 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE898C024EEE1A700303A13 /* Utils.swift */; };
 		BBF7DD1824EE0E5B007F8811 /* BetterEditApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF7DD1724EE0E5B007F8811 /* BetterEditApp.swift */; };
 		BBF7DD1A24EE0E5B007F8811 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF7DD1924EE0E5B007F8811 /* ContentView.swift */; };
 		BBF7DD1C24EE0E5C007F8811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF7DD1B24EE0E5C007F8811 /* Assets.xcassets */; };
 		BBF7DD1F24EE0E5C007F8811 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF7DD1E24EE0E5C007F8811 /* Preview Assets.xcassets */; };
+		BBFA278724EEEAA200F3DBE8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF7DD2D24EE0E8A007F8811 /* Cocoa.framework */; };
+		BBFA278824EEEAA200F3DBE8 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF7DD2F24EE0E8A007F8811 /* XcodeKit.framework */; };
+		BBFA278B24EEEAA200F3DBE8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA278A24EEEAA200F3DBE8 /* SourceEditorExtension.swift */; };
+		BBFA278D24EEEAA200F3DBE8 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFA278C24EEEAA200F3DBE8 /* SourceEditorCommand.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BBE898AE24EEDB4600303A13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF7DD0C24EE0E5B007F8811 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBE898A324EEDB4600303A13;
+			remoteInfo = LineExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BBE898B624EEDB4C00303A13 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BBE898B524EEDB4C00303A13 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF7DD3E24EE0E8A007F8811 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BBE898B024EEDB4600303A13 /* LineExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BBC5782724FD44B3006E3896 /* MultiLineFuncCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineFuncCommand.swift; sourceTree = "<group>"; };
+		BBCB643324F0BE18005A84A7 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		BBE898A424EEDB4600303A13 /* LineExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LineExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE898A824EEDB4600303A13 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		BBE898AA24EEDB4600303A13 /* SelectLineCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLineCommand.swift; sourceTree = "<group>"; };
+		BBE898AC24EEDB4600303A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE898AD24EEDB4600303A13 /* LineExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LineExtension.entitlements; sourceTree = "<group>"; };
+		BBE898B724EEDD8500303A13 /* DuplicateLineCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateLineCommand.swift; sourceTree = "<group>"; };
+		BBE898BA24EEDECA00303A13 /* JoinLinesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinLinesCommand.swift; sourceTree = "<group>"; };
+		BBE898BC24EEDF6C00303A13 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BBE898BE24EEE07000303A13 /* SplitLineCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitLineCommand.swift; sourceTree = "<group>"; };
+		BBE898C024EEE1A700303A13 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BBF7DD1424EE0E5B007F8811 /* BetterEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF7DD1724EE0E5B007F8811 /* BetterEditApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterEditApp.swift; sourceTree = "<group>"; };
 		BBF7DD1924EE0E5B007F8811 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -21,9 +85,25 @@
 		BBF7DD1E24EE0E5C007F8811 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBF7DD2024EE0E5C007F8811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBF7DD2124EE0E5C007F8811 /* BetterEdit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BetterEdit.entitlements; sourceTree = "<group>"; };
+		BBF7DD2D24EE0E8A007F8811 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BBF7DD2F24EE0E8A007F8811 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		BBFA278624EEEAA200F3DBE8 /* AccessLevelExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AccessLevelExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFA278A24EEEAA200F3DBE8 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		BBFA278C24EEEAA200F3DBE8 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		BBFA278E24EEEAA200F3DBE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBFA278F24EEEAA200F3DBE8 /* AccessLevelExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AccessLevelExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BBE898A124EEDB4600303A13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE898A524EEDB4600303A13 /* Cocoa.framework in Frameworks */,
+				BBE898B424EEDB4C00303A13 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBF7DD1124EE0E5B007F8811 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,13 +111,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBFA278324EEEAA200F3DBE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFA278724EEEAA200F3DBE8 /* Cocoa.framework in Frameworks */,
+				BBFA278824EEEAA200F3DBE8 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBE898A724EEDB4600303A13 /* LineExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BBE898A824EEDB4600303A13 /* SourceEditorExtension.swift */,
+				BBE898B724EEDD8500303A13 /* DuplicateLineCommand.swift */,
+				BBE898BA24EEDECA00303A13 /* JoinLinesCommand.swift */,
+				BBE898AA24EEDB4600303A13 /* SelectLineCommand.swift */,
+				BBE898BE24EEE07000303A13 /* SplitLineCommand.swift */,
+				BBC5782724FD44B3006E3896 /* MultiLineFuncCommand.swift */,
+				BBE898BC24EEDF6C00303A13 /* Extensions.swift */,
+				BBE898C024EEE1A700303A13 /* Utils.swift */,
+				BBCB643324F0BE18005A84A7 /* Errors.swift */,
+				BBE898B924EEDD9D00303A13 /* Supporting Files */,
+			);
+			path = LineExtension;
+			sourceTree = "<group>";
+		};
+		BBE898B924EEDD9D00303A13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBE898AC24EEDB4600303A13 /* Info.plist */,
+				BBE898AD24EEDB4600303A13 /* LineExtension.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BBF7DD0B24EE0E5B007F8811 = {
 			isa = PBXGroup;
 			children = (
 				BBF7DD1624EE0E5B007F8811 /* BetterEdit */,
+				BBE898A724EEDB4600303A13 /* LineExtension */,
+				BBFA278924EEEAA200F3DBE8 /* AccessLevelExtension */,
+				BBF7DD2C24EE0E8A007F8811 /* Frameworks */,
 				BBF7DD1524EE0E5B007F8811 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				BBF7DD1424EE0E5B007F8811 /* BetterEdit.app */,
+				BBE898A424EEDB4600303A13 /* LineExtension.appex */,
+				BBFA278624EEEAA200F3DBE8 /* AccessLevelExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,9 +191,47 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BBF7DD2C24EE0E8A007F8811 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBF7DD2D24EE0E8A007F8811 /* Cocoa.framework */,
+				BBF7DD2F24EE0E8A007F8811 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBFA278924EEEAA200F3DBE8 /* AccessLevelExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BBFA278A24EEEAA200F3DBE8 /* SourceEditorExtension.swift */,
+				BBFA278C24EEEAA200F3DBE8 /* SourceEditorCommand.swift */,
+				BBFA278E24EEEAA200F3DBE8 /* Info.plist */,
+				BBFA278F24EEEAA200F3DBE8 /* AccessLevelExtension.entitlements */,
+			);
+			path = AccessLevelExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BBE898A324EEDB4600303A13 /* LineExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBE898B124EEDB4600303A13 /* Build configuration list for PBXNativeTarget "LineExtension" */;
+			buildPhases = (
+				BBE898A024EEDB4600303A13 /* Sources */,
+				BBE898A124EEDB4600303A13 /* Frameworks */,
+				BBE898A224EEDB4600303A13 /* Resources */,
+				BBE898B624EEDB4C00303A13 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LineExtension;
+			productName = LineExtension;
+			productReference = BBE898A424EEDB4600303A13 /* LineExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 		BBF7DD1324EE0E5B007F8811 /* BetterEdit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBF7DD2424EE0E5C007F8811 /* Build configuration list for PBXNativeTarget "BetterEdit" */;
@@ -81,15 +239,34 @@
 				BBF7DD1024EE0E5B007F8811 /* Sources */,
 				BBF7DD1124EE0E5B007F8811 /* Frameworks */,
 				BBF7DD1224EE0E5B007F8811 /* Resources */,
+				BBF7DD3E24EE0E8A007F8811 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BBE898AF24EEDB4600303A13 /* PBXTargetDependency */,
 			);
 			name = BetterEdit;
 			productName = BetterEdit;
 			productReference = BBF7DD1424EE0E5B007F8811 /* BetterEdit.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BBFA278524EEEAA200F3DBE8 /* AccessLevelExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBFA279324EEEAA200F3DBE8 /* Build configuration list for PBXNativeTarget "AccessLevelExtension" */;
+			buildPhases = (
+				BBFA278224EEEAA200F3DBE8 /* Sources */,
+				BBFA278324EEEAA200F3DBE8 /* Frameworks */,
+				BBFA278424EEEAA200F3DBE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccessLevelExtension;
+			productName = AccessLevelExtension;
+			productReference = BBFA278624EEEAA200F3DBE8 /* AccessLevelExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,7 +277,13 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					BBE898A324EEDB4600303A13 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					BBF7DD1324EE0E5B007F8811 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					BBFA278524EEEAA200F3DBE8 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -119,11 +302,20 @@
 			projectRoot = "";
 			targets = (
 				BBF7DD1324EE0E5B007F8811 /* BetterEdit */,
+				BBE898A324EEDB4600303A13 /* LineExtension */,
+				BBFA278524EEEAA200F3DBE8 /* AccessLevelExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BBE898A224EEDB4600303A13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBF7DD1224EE0E5B007F8811 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,9 +325,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBFA278424EEEAA200F3DBE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BBE898A024EEDB4600303A13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE898A924EEDB4600303A13 /* SourceEditorExtension.swift in Sources */,
+				BBE898BF24EEE07000303A13 /* SplitLineCommand.swift in Sources */,
+				BBE898B824EEDD8500303A13 /* DuplicateLineCommand.swift in Sources */,
+				BBE898C124EEE1A700303A13 /* Utils.swift in Sources */,
+				BBCB643424F0BE18005A84A7 /* Errors.swift in Sources */,
+				BBE898AB24EEDB4600303A13 /* SelectLineCommand.swift in Sources */,
+				BBE898BD24EEDF6C00303A13 /* Extensions.swift in Sources */,
+				BBE898BB24EEDECA00303A13 /* JoinLinesCommand.swift in Sources */,
+				BBC5782824FD44B3006E3896 /* MultiLineFuncCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBF7DD1024EE0E5B007F8811 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,9 +360,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBFA278224EEEAA200F3DBE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFA278B24EEEAA200F3DBE8 /* SourceEditorExtension.swift in Sources */,
+				BBFA278D24EEEAA200F3DBE8 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BBE898AF24EEDB4600303A13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBE898A324EEDB4600303A13 /* LineExtension */;
+			targetProxy = BBE898AE24EEDB4600303A13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		BBE898B224EEDB4600303A13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "LineExtension/Supporting Files/LineExtension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WW4L4FC5YZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "LineExtension/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.alireza.BetterEdit.LineExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BBE898B324EEDB4600303A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "LineExtension/Supporting Files/LineExtension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WW4L4FC5YZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "LineExtension/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.alireza.BetterEdit.LineExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		BBF7DD2224EE0E5C007F8811 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -266,9 +542,11 @@
 		BBF7DD2524EE0E5C007F8811 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BetterEdit/BetterEdit.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BetterEdit/Preview Content\"";
@@ -280,7 +558,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.alireza.BetterEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -290,9 +567,11 @@
 		BBF7DD2624EE0E5C007F8811 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BetterEdit/BetterEdit.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BetterEdit/Preview Content\"";
@@ -304,9 +583,52 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.alireza.BetterEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BBFA279424EEEAA200F3DBE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AccessLevelExtension/AccessLevelExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WW4L4FC5YZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = AccessLevelExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.alireza.BetterEdit.AccessLevelExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BBFA279524EEEAA200F3DBE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AccessLevelExtension/AccessLevelExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WW4L4FC5YZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = AccessLevelExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.alireza.BetterEdit.AccessLevelExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -314,6 +636,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BBE898B124EEDB4600303A13 /* Build configuration list for PBXNativeTarget "LineExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE898B224EEDB4600303A13 /* Debug */,
+				BBE898B324EEDB4600303A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BBF7DD0F24EE0E5B007F8811 /* Build configuration list for PBXProject "BetterEdit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -328,6 +659,15 @@
 			buildConfigurations = (
 				BBF7DD2524EE0E5C007F8811 /* Debug */,
 				BBF7DD2624EE0E5C007F8811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBFA279324EEEAA200F3DBE8 /* Build configuration list for PBXNativeTarget "AccessLevelExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFA279424EEEAA200F3DBE8 /* Debug */,
+				BBFA279524EEEAA200F3DBE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
